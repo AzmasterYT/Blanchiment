@@ -32,13 +32,11 @@ local function OpenMenuBlanchiment()
                 RageUI.IsVisible(MainMenu, function()
 
                     RageUI.Line()
-                    --RageUI.Separator("~r~→ ~s~ Argent sales: ~r~".. ESX.PlayerData.accounts[2].money.. "~s~$")
                     RageUI.Separator("~r~→ ~s~ Taxe: ~r~".. Blanchi.Pourcent.PourcentageVisu .. "~s~%")
                     RageUI.Line()         
                     RageUI.Button("Blanchire", nil, {}, true , {
                         onSelected = function()
 
-                            --local input = lib.inputDialog('Blanchissement', {'Montant'})
  
 
                             local input = lib.inputDialog('Blanchissement', {  
@@ -51,7 +49,6 @@ local function OpenMenuBlanchiment()
                         local ArgentSale = input[1]
 
 
-                            --print(input[1])
                             TriggerServerEvent('ExodeRP:Blanchiment', ArgentSale)
                             RageUI.CloseAll()
 
@@ -88,7 +85,7 @@ Citizen.CreateThread(function()
                 Timer = 0   
                 lib.showTextUI('[E] - Pour blanchir')
                 if IsControlJustPressed(1,51) then
-                    --FreezeEntityPosition(PlayerPedId(), true)
+                    FreezeEntityPosition(PlayerPedId(), true)
                     OpenMenuBlanchiment()
                 end
             end
