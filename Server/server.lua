@@ -59,7 +59,7 @@ AddEventHandler("ExodeRP:Blanchiment",function(ArgentSale, Argent)
 		print("Bien joué"..Total.."Sale"..ArgentSale)
 		TriggerClientEvent('ox_lib:notify', source, {
 			title = 'Argent blanchie',
-			description = 'Tu viens de blanchir '..Total,
+			description = 'Tu viens de blanchir pour un total de '..Total..'$',
 			type = 'success'
 		})
 		xPlayers.addMoney(Total)
