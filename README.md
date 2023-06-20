@@ -7,7 +7,7 @@ Système de blanchiment d'argent sur FiveM qui tourne à 0.00 ms menu fermé ave
 Preview : https://streamable.com/zkz2dt
 
 ### Dependence 
-ox_lib
+[ox_lib](https://github.com/overextended/ox_lib/releases)
 
 ### Installation
 
